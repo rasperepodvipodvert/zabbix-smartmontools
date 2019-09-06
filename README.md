@@ -72,6 +72,7 @@ Note: currently windows version does not detaches and data can only be gathered 
 ### Finalizing
 Then you need to include your zabbix conf folder in `zabbix_agentd.conf`, like this:
 ```conf
+ServersActive=[change on your server name or IP address]
 Include=/usr/local/etc/zabbix/zabbix_agentd.conf.d/
 ```
 Also its recomended to add at least `Timeout=10` to config file to allow drives spun up in rare cases.
